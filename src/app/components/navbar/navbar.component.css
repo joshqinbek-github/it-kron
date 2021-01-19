@@ -1,0 +1,128 @@
+#navbar{
+    width: 100%;
+    padding: 18px 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+#nav-links{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    margin-top: -10px;
+    cursor: pointer;
+}
+.nav-link{
+    cursor: pointer;
+    padding: 15px 15px;
+    margin: 10px;
+    position: relative;
+}
+#logo:hover{
+    background-color:  rgba(255, 255, 255, 0.2);
+  }
+  #logo:hover path{
+    fill: #003399 !important;
+    stroke: #003399;
+
+  }
+  .kron{
+    transition: .5s;
+  }
+  #logo:hover .kron{
+    transform-origin: 50%;
+    transform: rotateY(180deg) rotateX(180deg) ;
+  }
+
+.nav-link .active-stick{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: all .5s;
+    opacity: 0;
+
+}
+
+.active  .active-stick{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #007bff;
+    opacity: 0.6;
+    transition: all .5s;
+
+
+}
+
+.nav-link:not(.active):hover .active-stick{
+    opacity: 1;
+}
+
+.nav-btn:hover{
+    background-color: #003399;
+    transition: all .3s;
+
+}
+
+#burger{
+    cursor: pointer;
+    padding: 15px 15px;
+    margin: 10px 20px;
+    position: relative;
+    border: none;
+    background-color: transparent ;
+    outline: none;
+    display: none;
+}
+#burger span{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#burger-content{
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    right: 0;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    
+}
+#burger-content a{
+    opacity: 0;
+}
+@media (max-width: 768px){
+    #navbar{
+        padding: 10px 5px;
+    }
+    .nav-btn{
+        padding: 10px;
+    }
+    #burger{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1050px){
+    .sm-link{
+        display: none;
+    }
+}
