@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { HomeComponent } from "./components/home/home.component";
+import { NotFoundComponent } from './not-found/not-found.component';
+
+const routes: Routes = [
+  {path: '', component: HomeComponent, pathMatch: "full"},
+  {path: 'not-found', component: NotFoundComponent},
+  {path: '**', redirectTo: 'not-found'}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

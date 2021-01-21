@@ -1,12 +1,12 @@
 #navbar{
     width: 100%;
-    padding: 18px 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     position: relative;
 }
+
 #nav-links{
     display: flex;
     flex-wrap: nowrap;
@@ -25,6 +25,7 @@
 }
 #logo:hover{
     background-color:  rgba(255, 255, 255, 0.2);
+
   }
   #logo:hover path{
     fill: #003399 !important;
@@ -63,6 +64,9 @@
 
 
 }
+.nav-link:hover{
+    color: #007bff;
+}
 
 .nav-link:not(.active):hover .active-stick{
     opacity: 1;
@@ -71,12 +75,15 @@
 .nav-btn:hover{
     background-color: #003399;
     transition: all .3s;
+    color: #fff;
 
+}
+.nav-btn{
+    white-space: nowrap;
 }
 
 #burger{
     cursor: pointer;
-    padding: 15px 15px;
     margin: 10px 20px;
     position: relative;
     border: none;
@@ -110,9 +117,7 @@
     opacity: 0;
 }
 @media (max-width: 768px){
-    #navbar{
-        padding: 10px 5px;
-    }
+    
     .nav-btn{
         padding: 10px;
     }
