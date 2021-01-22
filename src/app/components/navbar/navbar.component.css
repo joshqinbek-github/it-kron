@@ -96,7 +96,8 @@
     display: none;
 }
 #burger span{
-    font-size: 40px;
+    font-size: 35px;
+    color: #333;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -121,7 +122,9 @@
     opacity: 0;
 }
 @media (max-width: 768px){
-    
+    .nav-link:not(.nav-btn){
+        display: none;
+    }
     .nav-btn{
         padding: 10px;
     }
@@ -130,8 +133,6 @@
     }
 }
 
-@media (max-width: 1050px){
-    .sm-link{
-        display: none;
-    }
-}
+
+  
+
