@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="312" viewBox="0 0 520 312">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.506" x2="1" y2="0.506" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#80d8ff"/>
+      <stop offset="1" stop-color="#ea80fc"/>
+    </linearGradient>
+    <clipPath id="clip-Facebook_Cover_1">
+      <rect width="520" height="312"/>
+    </clipPath>
+  </defs>
+  <g id="Facebook_Cover_1" data-name="Facebook Cover – 1" clip-path="url(#clip-Facebook_Cover_1)">
+    <rect width="520" height="312" fill="#000d45"/>
+    <text id="iT" transform="translate(121 199)" fill="#fff" font-size="100" font-family="ChalkboardSE-Regular, Chalkboard SE"><tspan x="0" y="0">iT</tspan></text>
+    <text id="_.uz" data-name=".uz" transform="translate(348 193)" fill="#fff" font-size="50" font-family="ChalkboardSE-Regular, Chalkboard SE"><tspan x="0" y="0">.uz</tspan></text>
+    <path id="crown_2_" data-name="crown (2)" d="M108.062,169.516H24.937a5.2,5.2,0,0,1-4.971-3.684L.225,100.89a5.2,5.2,0,0,1,7.245-6.182l28.43,13.84L62.575,77.791a5.2,5.2,0,0,1,7.85,0L97.1,108.548l28.43-13.84a5.2,5.2,0,0,1,7.245,6.182l-19.742,64.941A5.2,5.2,0,0,1,108.062,169.516ZM28.788,159.125h75.423l15.158-49.861L98.063,119.636a5.2,5.2,0,0,1-6.2-1.267L66.5,89.125,41.136,118.369a5.2,5.2,0,0,1-6.2,1.267L13.63,109.264Z" transform="translate(215 33)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

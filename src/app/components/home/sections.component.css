@@ -63,22 +63,3 @@
 
 
 /* ---  section-3 ----  */
-
-.emp-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 18%;
-    height: 400px;
-
-}
-.emp-box{
-    border: 1px solid #fff;
-    outline: 2px solid #a7a7a7;
-    transform: skew(5deg, 5deg);
-    
-}
-.emp-item img{
-    width: 100%;
-}

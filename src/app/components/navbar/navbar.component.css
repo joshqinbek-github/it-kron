@@ -17,6 +17,16 @@
     margin-top: -10px;
     cursor: pointer;
 }
+.logo-text{
+    transition: .5s;
+}
+#logo:hover .logo-text{
+    fill: #EA80FC;
+}
+
+
+
+
 .nav-link{
     cursor: pointer;
     padding: 15px 15px;
@@ -29,18 +39,9 @@
     background-color:  rgba(255, 255, 255, 0.2);
 
   }
-  #logo:hover path{
-    fill: #003399 !important;
-    stroke: #003399;
+ 
+ 
 
-  }
-  .kron{
-    transition: .5s;
-  }
-  #logo:hover .kron{
-    transform-origin: 50%;
-    transform: rotateY(180deg) rotateX(180deg) ;
-  }
 
 
 .nav-link .active-stick{
