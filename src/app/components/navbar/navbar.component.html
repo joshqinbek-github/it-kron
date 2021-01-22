@@ -1,6 +1,6 @@
 <div id="navbar" class="pd-custom">
   
-    <div id="logo">
+    <div id="logo" routerLink="/">
         <svg width="114" viewBox="0 0 514 242" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="kron" d="M168 57V185" stroke="#8244bd" stroke-width="8" stroke-linecap="round" />
             <path class="kron" d="M361.417 238H168" stroke="#8244bd" stroke-width="8" stroke-linecap="round" />
@@ -20,28 +20,28 @@
     </div>
 
     <div id="nav-links">
-        <a class="nav-link sm-link blue-text">
+        <a mat-button class="nav-link sm-link blue-text">
             Services
             <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link sm-link blue-text">
+        <a mat-button class="nav-link sm-link blue-text">
             Projects
             <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link sm-link blue-text">
+        <a mat-button class="nav-link sm-link blue-text">
             Technologies
             <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link sm-link blue-text">
+        <a mat-button class="nav-link sm-link blue-text">
             Company    
 
             <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link  white-text nav-btn custom-bg">GET IN TOUCH</a>
+        <a mat-button class="nav-link  white-text nav-btn custom-bg">GET IN TOUCH</a>
         
         <button id="burger" #burger (click)="onBurger()"> 
             <span class="material-icons">
@@ -52,22 +52,22 @@
     
     <div id="burger-content" #burgerContent>
 
-        <a class="nav-link blue-text">
+        <a mat-button class="nav-link blue-text">
         Services
         <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link blue-text ">
+        <a mat-button class="nav-link blue-text ">
             Projects
             <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link blue-text ">
+        <a mat-button class="nav-link blue-text ">
             Technologies
             <div class="active-stick"></div>
         </a>
 
-        <a class="nav-link blue-text">
+        <a mat-button class="nav-link blue-text">
             Company
             <div class="active-stick"></div>
         </a>
@@ -75,4 +75,3 @@
 
     </div> 
 </div>
-<hr>

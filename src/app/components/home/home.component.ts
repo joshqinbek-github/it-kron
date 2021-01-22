@@ -3,7 +3,10 @@ import {gsap} from "gsap";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: [
+             './home.component.css',
+             './section-2.component.css'
+            ]
 })
 export class HomeComponent implements OnInit {
 
@@ -23,7 +26,6 @@ export class HomeComponent implements OnInit {
       duration: 1.5
     });
 
-  
 
     gsap.from(this.s1_content.nativeElement,{
       opacity: 0,

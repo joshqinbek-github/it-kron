@@ -166,4 +166,19 @@
         transform: skew(0,0) !important;
 
     } 
+
+
+    .s2-content-cont{
+        flex-direction: column;
+    }
+
+    .s2-box{
+        width: 100% !important;
+        align-items: flex-start !important;
+    }
+
+    .s2-img-box{
+        width: 30% !important;
+         
+    }
 }

@@ -1,7 +1,14 @@
-<div id="main">
+<mat-progress-bar
+        *ngIf="isLoading"
+          [mode]="'indeterminate'">
+</mat-progress-bar>
+
+<div class="main-cont">
     <app-navbar></app-navbar>
+</div>
+<hr>
+<div class="main-cont">
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 </div>
-
 
