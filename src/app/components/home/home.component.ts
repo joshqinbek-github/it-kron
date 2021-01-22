@@ -5,7 +5,7 @@ import {gsap} from "gsap";
   templateUrl: './home.component.html',
   styleUrls: [
              './home.component.css',
-             './section-2.component.css'
+             './sections.component.css'
             ]
 })
 export class HomeComponent implements OnInit {

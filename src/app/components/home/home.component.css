@@ -149,7 +149,7 @@
     
     .s1-intro{
         font-size: 200%;
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
   
@@ -178,7 +178,11 @@
     }
 
     .s2-img-box{
-        width: 30% !important;
+        width: 55% !important;
          
     }
+
+.s-intro{
+    font-size: 200% !important;
+}
 }

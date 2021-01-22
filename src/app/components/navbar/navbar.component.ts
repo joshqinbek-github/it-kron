@@ -48,6 +48,10 @@ export class NavbarComponent implements OnInit {
       gsap.to(this.burgerContent.nativeElement,{
         opacity: 0,
         delay: 1,
+        duration: .5
+      });
+      gsap.to(this.burgerContent.nativeElement,{
+        delay: 1.5,
         display: "none",
         duration: 0
       });

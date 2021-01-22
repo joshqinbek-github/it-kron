@@ -1,3 +1,5 @@
+/* ---  section-2 ----  */
+
 .section-2{
     display: flex;
     flex-direction: column;
@@ -5,10 +7,10 @@
     justify-content: center;
     width: 100%;
     background-color: #f7f7f7;
-
 }
 
 .s-intro{
+    text-align: center;
     font-size: 300%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
@@ -55,4 +57,28 @@
 .s2-content-box{
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
+}
+
+
+
+
+/* ---  section-3 ----  */
+
+.emp-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+    height: 400px;
+
+}
+.emp-box{
+    border: 1px solid #fff;
+    outline: 2px solid #a7a7a7;
+    transform: skew(5deg, 5deg);
+    
+}
+.emp-item img{
+    width: 100%;
 }
