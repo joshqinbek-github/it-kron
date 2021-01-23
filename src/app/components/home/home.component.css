@@ -136,12 +136,79 @@
     width: 150px;
 }
 
+.section-3{
+    width: 100%;
+    
+}
+.team-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+/* .team-img-box{
+    height: 400px;
+    width: 250px;
+    overflow: hidden;
+} */
+
+.team-img{    
+    height: 550px;
+    width: 200px;
+    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}   
+
+.team-img:before{
+    content: "";
+    position: absolute;
+    top: -200px;
+    transform: rotate(-13deg);
+    left: -100px;
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    border-bottom: 3px solid #e9eaeb
+    /* z-index: ; */
+}
 
 
+.team-img:after{
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    transform: rotate(13deg);
+    left: -100px;
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    border-top: 3px solid #e9eaeb
+    /* z-index: ; */
+}
 
-
-
-
+.team-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: -50px 0 0;
+    z-index: 0;
+    opacity: 0;
+    transition: .5s; 
+}
+.team-img:hover + .team-about{
+    opacity: 1;
+}
 
 
 
@@ -187,3 +254,5 @@
 }
 
 }
+
+
