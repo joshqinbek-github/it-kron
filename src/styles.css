@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+.openSans-light{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+.openSans-medium{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.openSans-bold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
 body{
     overflow-x: hidden;
 

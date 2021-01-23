@@ -1,0 +1,10 @@
+#nav-app{
+    height: 104px;
+}
+
+@media (max-width: 768px){
+    #nav-app{
+    height: 76px;
+
+}
+}

@@ -4,7 +4,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
 }
 
 #nav-links{
@@ -122,9 +125,10 @@
     opacity: 0;
 }
 @media (max-width: 768px){
-    .nav-link:not(.nav-btn){
+    .sm-link{
         display: none;
     }
+  
     .nav-btn{
         padding: 10px;
     }
