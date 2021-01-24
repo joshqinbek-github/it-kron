@@ -18,7 +18,9 @@ body{
     overflow-x: hidden;
 
 }
-
+.txd-none{
+    text-decoration: none;
+}
 .main-cont{
     width: 100%;
     padding: 0;
@@ -31,6 +33,15 @@ body{
 
 .custom-bg{
     background-color: #8244bd;
+}
+button.custom-bg{
+    white-space: nowrap;
+}
+button.custom-bg:hover{
+
+    background-color: #003399;
+    transition: all .3s;
+    color: #fff;
 }
 .white-text{
     color: #fff;
@@ -47,7 +58,7 @@ body{
 button{
     border: none;
 }
-button:focus{
+*:focus{
     outline: none !important;
     box-shadow: none !important;
 }

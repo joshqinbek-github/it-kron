@@ -1,0 +1,54 @@
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.intouch-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.intouch-content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+mat-form-field{
+    width: 80%;
+}
+
+.submit-form{
+    color: #ffffff;
+    border-radius: 0;
+    padding: 6px 25px;
+    width: 80%;
+    font-size: 120%;
+}
+
+/* #cdk-overlay-0{
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+} */
+#close{
+    border: none;
+    background-color: transparent;
+    /* font-size: 250%; */
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+}
+@media (max-width: 800px){
+    .intouch-box{
+        flex-direction: column;
+    }
+    .intouch-content, form{
+        width: 100%;
+    }
+}

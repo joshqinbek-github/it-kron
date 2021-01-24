@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import {gsap} from "gsap";
+import { IntouchComponent } from '../intouch/intouch.component';
 
 @Component({
   selector: 'app-navbar',
@@ -14,7 +16,18 @@ export class NavbarComponent implements OnInit {
 
   isBurgerClicked = false;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    let dialogRef = this.dialog.open(IntouchComponent, {
+      width: '100%'
+  });
+    dialogRef.afterClosed().subscribe(result => {
+    dialogRef = null;
+  });
+
+   
+  }
 
   ngOnInit(): void {
    

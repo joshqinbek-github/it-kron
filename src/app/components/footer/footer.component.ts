@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { IntouchComponent } from '../intouch/intouch.component';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    let dialogRef = this.dialog.open(IntouchComponent, {
+      width: '100%'
+  });
+    dialogRef.afterClosed().subscribe(result => {
+    dialogRef = null;
+  });
+
 
   ngOnInit(): void {
   }
