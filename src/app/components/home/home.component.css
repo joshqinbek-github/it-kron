@@ -162,7 +162,7 @@
 .sk .team-img{    
     height: 550px;
     width: 200px;
-    background: url("../../../assets/sk.jpeg") no-repeat center;
+    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -171,7 +171,16 @@
 .js .team-img{    
     height: 550px;
     width: 200px;
-    background: url("../../../assets/js.jpeg") no-repeat center;
+    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+} 
+.pr .team-img{    
+    height: 550px;
+    width: 250px;
+    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -230,7 +239,30 @@
     border-top: 3px solid #e9eaeb
     /* z-index: ; */
 }
+.pr  .team-img:before{
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: -100px;
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    border-bottom: 3px solid #e9eaeb
+    /* z-index: ; */
+}
 
+
+.pr .team-img:after{
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    left: -100px;
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    border-top: 3px solid #e9eaeb
+    /* z-index: ; */
+}
 .team-about{
     display: flex;
     align-items: center;
