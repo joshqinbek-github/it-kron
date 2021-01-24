@@ -86,40 +86,37 @@
 <div class="section-3 pd-custom">
     <div class="s-intro">Professional Team <br></div>
 
-    <div class="team-box">
-
-        <div class="team-item">
-
-          
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            <div class="slide team-item sk">
                 <div class="team-img"></div>
-
+                <div class="team-about">
+                    <h3 class="openSans-light">Salimbek Karimbayev</h3>
+                    <span class="text-muted">
+                        Owner of IT-Kron LLC.
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    
+        <ng-template carouselSlide>
+              <div  class="team-item js slide">
+    
+              
+                <div class="team-img"></div>
+    
            
             <div class="team-about">
-                <h3 class="openSans-light">Salimbek Karimbayev</h3>
+                <h3 class="openSans-light">Jo'shqinbek Sa'dullayev</h3>
                 <span class="text-muted">
-                    Owner of IT-Kron LLC.
+                    Full stack Developer
                 </span>
             </div>
-
-        </div>  
-
-
-        <div class="team-item">
-
-          
-            <div class="team-img"></div>
-
-       
-        <div class="team-about">
-            <h3 class="openSans-light">Jo'shqinbek Sa'dullayev</h3>
-            <span class="text-muted">
-                Full stack Developer
-            </span>
-        </div>
-
-    </div>  
-        
     
-    </div>
+          </div>  
+        </ng-template>
+    
+    </owl-carousel-o>
+   
 </div>
 <br><br>

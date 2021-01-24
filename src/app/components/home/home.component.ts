@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import {gsap} from "gsap";
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,6 +15,26 @@ export class HomeComponent implements OnInit {
   @ViewChild("intro", {static: true}) intro: ElementRef<HTMLHeadingElement>;
   @ViewChild("s1_content", {static: true}) s1_content: ElementRef<HTMLDivElement>;
 
+  customOptions: any = {
+    // loop: true,
+    // autoplay:true,
+    responsiveClass: true,
+    // navText: ['Previous', 'Next'],
+    responsive: {
+      0: {
+       items: 1
+     },
+      480: {
+       items: 1
+     },
+      940: {
+       items: 2
+     }
+    },
+  //  nav: true
+  }
+
+  
   constructor() { }
 
   ngOnInit(): void {
