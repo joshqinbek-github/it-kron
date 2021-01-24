@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
     dialogRef = null;
   });
-
+  }
 
   ngOnInit(): void {
   }
