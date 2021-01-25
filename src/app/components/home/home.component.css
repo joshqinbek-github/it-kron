@@ -162,7 +162,7 @@
 .sk .team-img{    
     height: 550px;
     width: 200px;
-    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
+    background: url("../../../assets/sanshu.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -171,7 +171,7 @@
 .js .team-img{    
     height: 550px;
     width: 200px;
-    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
+    background: url("https://nord-soft.com/static/img/photos/luchonok.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -180,7 +180,7 @@
 .pr .team-img{    
     height: 550px;
     width: 250px;
-    background: url("https://nord-soft.com/static/img/photos/kotov.jpg") no-repeat center;
+    background: url("../../../assets/manshu.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     overflow: hidden;

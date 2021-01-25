@@ -1,7 +1,11 @@
 <!-- section-1 home -->
 <div class="pd-custom section-1">
     <h1 class="s1-intro" #intro>
-        We build<span>web & mobile <br> application</span>
+        Мы разрабатываем
+        <span>
+            web & mobile <br> 
+            application
+        </span>
     </h1>
     
     <div class="s1-content" #s1_content>
@@ -25,7 +29,7 @@
 
         <div class="s1-rect" [routerLink]="['/']">
             <div class="s1-rect-content">
-                <h2>Service engineering</h2>
+                <h2>Marketing</h2>
                 <div class="stick-right"> 
                  
                 </div>
@@ -34,7 +38,7 @@
 
         <div class="s1-rect" [routerLink]="['/']">
             <div class="s1-rect-content">
-                <h2>Business analysis</h2>
+                <h2>E-Commerce Development</h2>
                 <div class="stick-right"></div>
             </div>
         </div>
@@ -45,37 +49,39 @@
 <!-- section-2  -->
 
 <div class="pd-custom section-2" #sect2>
-    <div class="s-intro">What matters is the Result <br></div>
+    <div class="s-intro">
+        Важен результат
+         <br></div>
     
     <div class="s2-content-cont">
         <div class="s2-box">
             <div class="s2-img-box">
                 <img src="../../../assets/icons-05.svg" alt="">
-                <h3>Reliability</h3>
+                <h3>Безопасный</h3>
+
             </div>   
             <div class="s2-content-box">
-                    Here at Nord-Soft, we implement best practices and do things right from beginning to end. Such an approach allows us to maintain a consistent level of quality and deliver on our promises.
-            </div>         
+                Здесь, в "IT-Kron", мы внедряем лучшие практики и делаем все от начала до конца. Такой подход позволяет нам поддерживать постоянный уровень качества и выполнять свои обещания. </div>         
+        </div>
+        
+        <div class="s2-box">
+            <div class="s2-img-box">
+                <img src="../../../assets/bullhorn.svg" alt="">
+                <h3>Oбщение</h3>
+            </div>   
+            <div class="s2-content-box">
+                Мы открыты и доступны на протяжении всего процесса разработки, чтобы не упустить ни одной детали вашего проекта. Мы считаем, что прозрачность и честность - это то, что делает возможным наилучшее обслуживание клиентов.    </div>         
         </div>
 
         <div class="s2-box">
             <div class="s2-img-box">
-                <img src="../../../assets/icons-05.svg" alt="">
-                <h3>Reliability</h3>
-            </div>   
-            <div class="s2-content-box">
-                    Here at Nord-Soft, we implement best practices and do things right from beginning to end. Such an approach allows us to maintain a consistent level of quality and deliver on our promises.
-            </div>         
-        </div>
+                <img src="../../../assets/qwertyh.svg" alt="">
 
-        <div class="s2-box">
-            <div class="s2-img-box">
-                <img src="../../../assets/icons-05.svg" alt="">
-                <h3>Reliability</h3>
+
+                <h3>Прогресс</h3>
             </div>   
             <div class="s2-content-box">
-                    Here at Nord-Soft, we implement best practices and do things right from beginning to end. Such an approach allows us to maintain a consistent level of quality and deliver on our promises.
-            </div>         
+                Наша цель - раскрыть истинную ценность вашего бизнеса, используя передовые технологии вместе с тщательным бизнес-анализом, и привнести креативность и инновации, где это необходимо.  </div>         
         </div>
     </div>
 </div>
@@ -84,40 +90,46 @@
 <!-- section-3  -->
 
 <div class="section-3 pd-custom" #sect3>
-    <div class="s-intro">Professional Team <br></div>
+    <div class="s-intro">Team <br></div>
 
     <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide>
             <div class="slide team-item sk">
                 <div class="team-img"></div>
                 <div class="team-about">
-                    <h3 class="openSans-light">Salimbek Karimbayev</h3>
+                    <h3 class="openSans-light">
+                        Жўшқинбек Садуллаев
+                    </h3>
                     <span class="text-muted">
-                        Owner of IT-Kron LLC.
+                        Full stack Developer
                     </span>
                 </div>
             </div>
         </ng-template>
-
         <ng-template carouselSlide>
             <div  class="team-item pr slide"> 
-              <div class="team-img"></div>               
-          <div class="team-about">
-              <h3 class="openSans-light">Jo'shqinbek Sa'dullayev</h3>
-              <span class="text-muted">
-                  Full stack Developer
-              </span>
+                <div class="team-img"></div>               
+                <div class="team-about">
+                    <h3 class="openSans-light">
+                        Салимбек Каримбаев
+                    </h3>
+                    <span class="text-muted">
+                        Owner of IT-Kron LLC.
+                    </span>            
           </div>
         </div>  
       </ng-template>
+
   
         <ng-template carouselSlide>
               <div  class="team-item js slide"> 
                 <div class="team-img"></div>               
             <div class="team-about">
-                <h3 class="openSans-light">Jo'shqinbek Sa'dullayev</h3>
+                <h3 class="openSans-light">
+                    Мадина Назимова
+                </h3>
                 <span class="text-muted">
-                    Full stack Developer
+                    Project Manager
                 </span>
             </div>
           </div>  
