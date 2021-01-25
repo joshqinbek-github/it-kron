@@ -131,7 +131,7 @@ export class HomeComponent implements OnInit {
     },
     duration: 1.5,
     opacity: 1,
-    scale: 1
+    y: "200px"
     })
 
 gsap.to(this.s1_content.nativeElement.childNodes, {
