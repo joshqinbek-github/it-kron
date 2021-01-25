@@ -28,34 +28,45 @@
     position: relative;
     width: 23%;
     height: 450px;
-    background: url("../../../assets/dv.png") no-repeat;
-    background-position: top left;
-    background-size: cover;
     transition: .8s;
     overflow: hidden;
 
 }
 .s1-rect:hover{
    background-position: center;
+   
 }
 
 .s1-rect:nth-child(1){
     transform: skew(1deg, 12deg);
+   background: url("../../../assets/dv.png") no-repeat;
+    background-position: top left;
+    background-size: cover;
+   
 }
 
 .s1-rect:nth-child(2){
     transform: skew(-1deg, -12deg);
+   background: url("../../../assets/mobile.jpeg") no-repeat;
+    background-position: top left;
+    background-size: cover;
 }
 
 .s1-rect:nth-child(3){
     transform: skew(1deg, 12deg);
+    background: url("../../../assets/marketing.jpg") no-repeat;
+    background-position: top left;
+    background-size: cover;
+    
 
 
 }
 
 .s1-rect:nth-child(4){
     transform: skew(-1deg, -12deg);
-    
+    background: url("../../../assets/e-commerce.jpeg") no-repeat;
+    background-position: top left;
+    background-size: cover;
 }
 
 
