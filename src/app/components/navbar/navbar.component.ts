@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
 
   @ViewChild("burger", {static: true}) burgerBtn: ElementRef;
   @ViewChild("burgerContent", {static: true}) burgerContent: ElementRef;
+  @ViewChild("navbar", {static: true}) nav: ElementRef;
   
 
   isBurgerClicked = false;
@@ -31,7 +32,18 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-   
+  
+    this.initAnimNav();  
+  }
+
+  initAnimNav(){
+    gsap.from(this.nav.nativeElement,{
+      opacity: 0,
+      duration: 1,
+      y: "-100px"
+
+    })
+
   }
 
   onBurger(){

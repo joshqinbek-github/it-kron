@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { IntouchComponent } from '../intouch/intouch.component';
+// import {gsap} from "gsap";
+// import {ScrollTrigger} from "gsap/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +12,8 @@ import { IntouchComponent } from '../intouch/intouch.component';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+
+  // @ViewChild("footer", {static: true}) footer: ElementRef;
 
   constructor(public dialog: MatDialog) {}
 
