@@ -130,8 +130,7 @@ export class HomeComponent implements OnInit {
       start: "-150px top",
     },
     duration: 1.5,
-    opacity: 1,
-    scale: 1
+    opacity: 1
     })
 
 gsap.to(this.s1_content.nativeElement.childNodes, {
