@@ -19,6 +19,7 @@ export class FooterComponent implements OnInit {
 
   openDialog() {
     let dialogRef = this.dialog.open(IntouchComponent, {
+      height: '90%',
       width: '100%'
   });
     dialogRef.afterClosed().subscribe(result => {
