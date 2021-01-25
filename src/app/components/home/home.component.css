@@ -32,7 +32,19 @@
     overflow: hidden;
 
 }
-.s1-rect:hover{
+.s1-rect:nth-child(1):hover{
+   background-position: center;
+   
+}
+.s1-rect:nth-child(2):hover{
+   background-position: center;
+   
+}
+.s1-rect:nth-child(3):hover{
+   background-position: center;
+   
+}
+.s1-rect:nth-child(4):hover{
    background-position: center;
    
 }
