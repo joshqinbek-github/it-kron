@@ -113,7 +113,7 @@ export class HomeComponent implements OnInit {
         trigger: this.sect2.nativeElement,
         scrub: true,
         markers: false,
-        start: "220px top",
+        start: "200px top",
       },
       duration: 1.5,
       // y: -250,
@@ -127,7 +127,7 @@ export class HomeComponent implements OnInit {
       trigger: this.sect2.nativeElement,
       scrub: true,
       markers: false,
-      start: "-150px top",
+      start: "-200px top",
     },
     duration: 1.5,
     opacity: 1

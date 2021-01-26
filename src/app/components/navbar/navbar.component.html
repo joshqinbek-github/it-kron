@@ -18,17 +18,29 @@
   </div>
 
   <div id="nav-links">
-    <a mat-button class="nav-link sm-link blue-text">
+    <a 
+    [routerLink]="['services']"  
+    routerLinkActive="active"
+    mat-button 
+    class="nav-link sm-link blue-text">
       Сервисы
       <div class="active-stick"></div>
     </a>
 
-    <a mat-button class="nav-link sm-link blue-text">
+    <a 
+    [routerLink]="['projects']"  
+    routerLinkActive="active"
+    mat-button 
+    class="nav-link sm-link blue-text">
       Проекты
       <div class="active-stick"></div>
     </a>
 
-    <a mat-button class="nav-link sm-link blue-text">
+    <a 
+    [routerLink]="['technologies']"  
+    routerLinkActive="active"
+    mat-button 
+    class="nav-link sm-link blue-text">
       Технологии
       <div class="active-stick"></div>
     </a>
@@ -43,17 +55,32 @@
   </div>
 
   <div id="burger-content" #burgerContent>
-    <a mat-button (click)="onBurger()" class="nav-link blue-text">
+    <a mat-button 
+        (click)="onBurger()" 
+        [routerLink]="['services']"  
+        routerLinkActive="active"
+        class="nav-link blue-text"
+        >
       Сервисы
       <div class="active-stick"></div>
     </a>
 
-    <a mat-button (click)="onBurger()" class="nav-link blue-text">
+    <a 
+      mat-button 
+      (click)="onBurger()" 
+      [routerLink]="['']"  
+      routerLinkActive="active"
+      class="nav-link blue-text">
       Проекты 
       <div class="active-stick"></div>
     </a>
 
-    <a mat-button (click)="onBurger()" class="nav-link blue-text">
+    <a 
+      mat-button 
+      (click)="onBurger()" 
+      class="nav-link blue-text"
+      [routerLink]="['technologies']"  
+      routerLinkActive="active">
       Технологии
       <div class="active-stick"></div>
     </a>

@@ -16,6 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {IntouchComponent} from "./components/intouch/intouch.component";
+import { ServicesComponent } from './components/services/services.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { TechnologiesComponent } from './components/technologies/technologies.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import {IntouchComponent} from "./components/intouch/intouch.component";
     FooterComponent,
     HomeComponent,
     NotFoundComponent,
-    IntouchComponent
+    IntouchComponent,
+    ServicesComponent,
+    ProjectsComponent,
+    TechnologiesComponent
   ],
   imports: [
     FormsModule,
