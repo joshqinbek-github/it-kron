@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 
+.pd-service{
+    padding: 60px 12vh;
+
+}
+
+.pd-service-t{
+    padding-top: 60px !important;
+
+}
+.pd-service-b{
+    padding-bottom: 60px !important;
+
+}
 .openSans-light{
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
@@ -13,6 +26,30 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
+.bg-2{
+    background-color: #f7f7f7;
+}
+.s1-intro{
+    margin: 0 0 30px;
+    font-size: 350%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.s1-intro-light{
+    font-size: 200%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.s1-intro span{
+    font-size: 120%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #222;
+    margin-left: 10px;
+}
+
 
 body{
     overflow-x: hidden;
@@ -73,6 +110,29 @@ input:focus{
     .pd-custom{
         padding: 10px 10px;
     }
+
+    .pd-service{
+        padding: 30px 10px;
+    }
+    .pd-service-b{
+        padding-bottom: 30px;
+    }
+    .pd-service-t{
+        padding-top: 30px ;  
+    }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media (max-width: 860px){
+    .s1-intro{
+        font-size: 200% !important;
+        width: 100%;
+        text-align: center;
+    }
+    .s1-intro-light{       
+        font-size: 160%;
+       
+    }
+}

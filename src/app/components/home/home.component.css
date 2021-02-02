@@ -4,20 +4,6 @@
 
 }
 
-.s1-intro{
-    margin: 0 0 30px;
-    font-size: 350%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-}
-.s1-intro span{
-    font-size: 120%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    color: #222;
-    margin-left: 10px;
-}
-
 .s1-content{
     display: flex;
     justify-content: space-between;
@@ -194,7 +180,7 @@
 .js .team-img{    
     height: 550px;
     width: 200px;
-    background: url("https://nord-soft.com/static/img/photos/luchonok.jpg") no-repeat center;
+    background: url("../../../assets/md.jpeg") no-repeat center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -306,11 +292,7 @@
     .team-about{
         opacity: 1;
     }
-    .s1-intro{
-        font-size: 200%;
-        width: 100%;
-        text-align: center;
-    }
+
   
      .s1-content{
         flex-direction: column;
@@ -341,9 +323,7 @@
          
     }
 
-.s-intro{
-    font-size: 200% !important;
-}
+
 
 }
 
