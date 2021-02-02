@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .section-4, .section-5{
     display: flex;
@@ -24,7 +24,7 @@
 }
 
 .s3-item{
-    width: 48%;
+    width: 47%;
     background-color: #fff;
     padding: 28px 22px;
     margin: 10px;
