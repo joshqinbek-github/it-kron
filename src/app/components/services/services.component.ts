@@ -18,25 +18,42 @@ export class ServicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // this.scrollAnim();
-    for(let i; i <= this.sect_6.nativeElement.childNodes.length; i++){
-      console.log(i)
-    }
+    this.scrollAnim();
+   
   }
 
 
 
   scrollAnim():void{
-    gsap.from(this.sect_6.nativeElement.childNodes[1], {
+    gsap.to(this.sect_6.nativeElement.childNodes[0].childNodes, {
       scrollTrigger: {
-        trigger: this.sect_6.nativeElement,
-        scrub: true,
+        trigger: this.sect_6.nativeElement, 
+        scrub: false,
         markers: false,
-        start: "300px top",
+        start: "-800px top",
+        once: true,
+        pin: false,
       },
-      duration: 1.5,
-      y: -250,
+      duration: 1,
+      opacity: 1,
+      stagger: .5,
+    });
+  
+
+
+
+    gsap.to(this.sect_6.nativeElement.childNodes[1].childNodes, {
+      scrollTrigger: {
+        trigger: this.sect_6.nativeElement, 
+        markers: false,
+        start: "-800px top",
+        once: true,
+        pin: false,
+      },
+      duration: 2.5,
+      opacity: 1,
       stagger: .4,
     });
   }
+
 }

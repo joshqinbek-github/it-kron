@@ -122,16 +122,7 @@ export class HomeComponent implements OnInit {
     });
   
 
-  gsap.to(this.sect3.nativeElement, {
-    scrollTrigger: {
-      trigger: this.sect2.nativeElement,
-      scrub: true,
-      markers: false,
-      start: "-200px top",
-    },
-    duration: 1.5,
-    opacity: 1
-    })
+
 
 gsap.to(this.s1_content.nativeElement.childNodes, {
   scrollTrigger: {
