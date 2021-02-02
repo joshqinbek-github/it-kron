@@ -180,7 +180,7 @@
 .js .team-img{    
     height: 550px;
     width: 200px;
-    background: url("../../../assets/md.jpeg") no-repeat center;
+    background: url("../../../assets/md.jpeg") no-repeat 30%;
     background-size: cover;
     position: relative;
     overflow: hidden;
