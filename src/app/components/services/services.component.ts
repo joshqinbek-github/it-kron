@@ -13,6 +13,7 @@ gsap.registerPlugin(ScrollTrigger)
 export class ServicesComponent implements OnInit {
 
   @ViewChild("sect_6", {static: true}) sect_6: ElementRef<HTMLDivElement>;
+  @ViewChild("sect_5", {static: true}) sect_5: ElementRef<HTMLDivElement>;
 
 
   constructor() { }
@@ -25,32 +26,22 @@ export class ServicesComponent implements OnInit {
 
 
   scrollAnim():void{
-    gsap.to(this.sect_6.nativeElement.childNodes[0].childNodes, {
-      scrollTrigger: {
-        trigger: this.sect_6.nativeElement, 
-        scrub: false,
-        markers: false,
-        start: "-800px top",
-        once: true,
-        pin: false,
-      },
+    gsap.to(this.sect_6.nativeElement.childNodes[0].childNodes, {      
       duration: 1,
       opacity: 1,
-      stagger: .5,
+      stagger: .4,
     });
   
-
+    gsap.from(this.sect_5.nativeElement.childNodes, {      
+      duration: 1,
+      opacity: 1,
+      stagger: .4,
+    });
 
 
     gsap.to(this.sect_6.nativeElement.childNodes[1].childNodes, {
-      scrollTrigger: {
-        trigger: this.sect_6.nativeElement, 
-        markers: false,
-        start: "-800px top",
-        once: true,
-        pin: false,
-      },
-      duration: 2.5,
+      delay: 2.2,
+      duration: 1,
       opacity: 1,
       stagger: .4,
     });
