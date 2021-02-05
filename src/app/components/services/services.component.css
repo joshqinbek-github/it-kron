@@ -93,6 +93,9 @@
     align-items: center;
     flex-wrap: nowrap;
 }
+.s6-item-top h3{
+    font-size: 130% !important;  
+}
 .s6-item-top img{
     width: 25%;
 }
