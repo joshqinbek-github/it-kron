@@ -94,7 +94,7 @@
     flex-wrap: nowrap;
 }
 .s6-item-top img{
-    width: 27%;
+    width: 25%;
 }
 
 .s6-item-bottom{
@@ -109,7 +109,7 @@
     left: 1%;
     background-color: rgb(20, 20, 162);
     border-radius: 50%;
-    padding: 15px 20px;
+    padding: 10px 15px;
     color: #fff;
     z-index: 1;
 }
