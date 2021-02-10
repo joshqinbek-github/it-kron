@@ -20,21 +20,23 @@ export class ServicesComponent implements OnInit {
   @ViewChild("sect_1", {static: true}) sect_1: ElementRef<HTMLDivElement>;
 
 
-  constructor() { }
-
+  constructor() {
+    
+  }
+  
   ngOnInit(): void {
     this.scrollAnim();
+    
+    window.addEventListener("scroll", ()=>{
+        this.animBottom();
+    })
    
   }
 
 
 
   scrollAnim():void{
-    gsap.to(this.sect_6.nativeElement.childNodes[0].childNodes, {      
-      duration: 1,
-      opacity: 1,
-      stagger: .4,
-    });
+   
   
     gsap.from(this.sect_5.nativeElement.childNodes, {      
       duration: 1.5,
@@ -69,12 +71,25 @@ export class ServicesComponent implements OnInit {
       stagger: .4,
     });
    
+  }
+
+
+  animBottom(){
+
+   if(window.pageYOffset >= 2386){
+     console.log("done")
     gsap.to(this.sect_6.nativeElement.childNodes[1].childNodes, {
-      delay: 2.2,
+      delay: 2,
       duration: 1,
       opacity: 1,
       stagger: .4,
     });
-  }
 
+    gsap.to(this.sect_6.nativeElement.childNodes[0].childNodes, {      
+      duration: 1,
+      opacity: 1,
+      stagger: .4,
+    });
+    }
+   }
 }
