@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,6 +20,8 @@ import {IntouchComponent} from "./components/intouch/intouch.component";
 import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,10 +32,13 @@ import { TechnologiesComponent } from './components/technologies/technologies.co
     IntouchComponent,
     ServicesComponent,
     ProjectsComponent,
-    TechnologiesComponent
+    TechnologiesComponent,
+    AdminComponent,
+    AdminLoginComponent
   ],
   imports: [
     FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -41,7 +47,8 @@ import { TechnologiesComponent } from './components/technologies/technologies.co
     CarouselModule,
     MatDialogModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

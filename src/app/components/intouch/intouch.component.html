@@ -3,21 +3,21 @@
     <i class="ri-close-line"></i>
 </button>
 <mat-dialog-content class="mat-typography pt-2" #intouch>
-   
+
     <div class="intouch-box">
-        <form>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <h2 class="openSans-light h1">Связаться</h2>
             <mat-form-field>
                 <mat-label>Имя</mat-label>
-                <input matInput>
+                <input matInput formControlName="name">
               </mat-form-field>
               <mat-form-field >
-                <mat-label>Эл. адрес</mat-label>
-                <input matInput>
+                <mat-label>Тел.</mat-label>
+                <input matInput formControlName="phone">
               </mat-form-field>
               <mat-form-field >
                 <mat-label>Сообщение</mat-label>
-                <textarea rows="4" matInput></textarea>
+                <textarea rows="4" matInput formControlName="message"></textarea>
               </mat-form-field>
               <button mat-button class="submit-form custom-bg mb-2">
                     Отправить
@@ -38,7 +38,7 @@
                     или свяжитесь с нами
                 </span>
             </p>
-            
+
             <h2 class="openSans-bold h2">
                 +998 33 010 02 03
             </h2>
@@ -54,7 +54,7 @@
                 </a>
             </div>
         </div>
-        
+
     </div>
 
 </mat-dialog-content>

@@ -33,13 +33,13 @@ export class AppComponent {
         // If it's the start of navigation, `add()` a loading indicator
         if (event instanceof NavigationStart) {
           this.isLoading = true;
-          
+
           return;
         }
         setTimeout(() => {
           this.isLoading = false;
         }, 1000);
-        
+
 
       });
   }
